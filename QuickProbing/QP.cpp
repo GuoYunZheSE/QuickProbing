@@ -1,30 +1,35 @@
+#include "RuntimeEnvironment.h"
+#include <fstream>
 #include <iostream>
-#include <vector>
-using namespace std;
+#include <string>
 int main()
 {
-	int R, T;
-	vector<vector<double>> Matrix(R, vector<double>(T));//The Dataset Matrix
-	double alpha;//The threshold of Matrix.
-	int min_r;//The minmum number of Rows of the minning pattern.
-	int min_t;//The minmum number of Column of the minning pattern.
-
-	vector<vector<vector<double>>> upsilon;//The set of submatrix
-
-	vector<int> CR(0);//The set of Rows that has been mined for at least one times.
-	vector<int> CT(0);//The set of Columns that has been mined for at least one times.
-	vector<int> tau(0);//The set of Columns available for expansion.
-
-	bool CR_Change = true;
-	bool CT_Change = true;
-	while (CR_Change&&CT_Change)//IF CR and CT don't converge
+	RunTimeEnvironment RTE;
+	cout << "Please enter input file name:";
+	string name;
+	cin >> name;
+	ifstream ist(name.c_str());
+	if (!ist)
 	{
-		vector<int> Q(0);//The set of a SOPSM's Columns.
-		T = Matrix[0].size;
-		for (int i = 0; i < T; i++)//tau=T.
+		cerr << "Can't open input file";
+	}
+
+	int m_Row;
+	int m_Column;
+	int m_Value;
+	while (ist >> m_Row >> m_Column >> m_Value)//Read a combination of statistics for data set.
+	{
+		Entry temp_Entry(m_Row, m_Column, m_Value);//For each combination, we construct a entry
+		RTE.R[m_Row].ReadData(temp_Entry);//Insert entry to the row with the same row number
+		RTE.T[m_Column].ReadData(temp_Entry);//Insert entry to the row with the same column number
+	}
+	for (int i = 0; RTE.CRChange || RTE.CTChange; i++)
+	{
+		Pattern temp_Pattern;
+		temp_Pattern.Tau = RTE.T;
+		while (temp_Pattern.Tau.size!=0)
 		{
-			tau[i] = i;
+
 		}
-		 
 	}
 }

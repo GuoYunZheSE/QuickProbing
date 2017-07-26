@@ -19,4 +19,24 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Pattern.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Row.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Entry.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Column.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Submatrix.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RuntimeEnvironment.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
