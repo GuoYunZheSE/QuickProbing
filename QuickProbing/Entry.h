@@ -9,6 +9,7 @@ public:
 	int ColumnNumber;
 	int Value;
 	bool Valid;
+	friend bool operator==(const Entry& E1, const Entry& E2);
 private:
 
 };

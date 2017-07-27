@@ -139,7 +139,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Entry.cpp" />
+    <ClCompile Include="Pattern.cpp" />
     <ClCompile Include="QP.cpp" />
+    <ClCompile Include="Row.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Column.h" />

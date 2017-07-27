@@ -21,7 +21,7 @@ int main()
 	{
 		Entry temp_Entry(m_Row, m_Column, m_Value);//For each combination, we construct a entry
 		RTE.R[m_Row].ReadData(temp_Entry);//Insert entry to the row with the same row number
-		RTE.T[m_Column].ReadData(temp_Entry);//Insert entry to the row with the same column number
+		RTE.T[m_Column].ReadData(temp_Entry);//Insert entry to the Column with the same column number
 	}
 	for (int i = 0; RTE.CRChange || RTE.CTChange; i++)
 	{
