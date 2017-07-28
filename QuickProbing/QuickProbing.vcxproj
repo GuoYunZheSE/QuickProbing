@@ -143,6 +143,7 @@
     <ClCompile Include="Pattern.cpp" />
     <ClCompile Include="QP.cpp" />
     <ClCompile Include="Row.cpp" />
+    <ClCompile Include="RuntimeEnvironment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Column.h" />

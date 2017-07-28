@@ -45,3 +45,7 @@ bool operator>(const Row & R1, const Row & R2)
 		return false;
 	}
 }
+double Row::getDensity(int T)
+{
+	return this->ValidNumber / T;
+}

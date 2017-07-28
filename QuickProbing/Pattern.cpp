@@ -33,8 +33,15 @@ Column Pattern::PickCol(vector<Column> &m_Tau, vector<Row> &m_SupportRow)
 	}
 
 	//Pick t with smallest d^T (t) in C;
-	sort(C.begin(), C.end(), Column::Column_dTt_Compare);
-	return C[0];
+	if (C.size() != 0)
+	{
+		sort(C.begin(), C.end(), Column::Column_dTt_Compare);
+		return C[0];
+	}
+	else
+	{
+		return Column(-1);
+	}
 }
 
 

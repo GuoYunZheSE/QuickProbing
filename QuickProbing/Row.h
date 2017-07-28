@@ -9,12 +9,14 @@ public:
 	~Row();
 	int RowNumber;
 	vector<Entry> entries;
-	double density;
+	int ValidNumber;
 	int dRr;
+	double density;
 
 	bool Row_dRr_Compare(const Row& R1, const Row& R2);
 	bool Row_RN_Compare(const Row& R1, const Row& R2);
 	void ReadData(const Entry& m_entry);
+	double getDensity(int T); 
 
 	friend bool operator==(const Row& R1, const Row& R2);
 	friend bool operator<(const Row& R1, const Row& R2);
@@ -25,12 +27,15 @@ private:
 
 Row::Row():entries()
 {
+	this->ValidNumber = 0;
 	dRr = 0;
 	entries.reserve(10000);//Set the default size to 10000, so the times of vector resize will be reduced
 }
 
 inline void Row::ReadData(const Entry& m_entry)
 {
+	this->ValidNumber++;
+	this->RowNumber = m_entry.RowNumber;
 	this->entries.insert(entries.begin()+m_entry.ColumnNumber, m_entry);
 }
 

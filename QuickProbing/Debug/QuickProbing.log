@@ -1,0 +1,21 @@
+﻿  Pattern.cpp
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(21): error C3867: “Row::Row_dRr_Compare”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(21): error C2672: “sort”: 未找到匹配的重载函数
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(21): error C2780: “void std::sort(_RanIt,_RanIt)”: 应输入 2 个参数，却提供了 3 个
+  e:\visualstudio2017\vc\tools\msvc\14.10.25017\include\algorithm(2921): note: 参见“std::sort”的声明
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(22): error C3867: “Row::Row_dRr_Compare”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(22): error C2672: “sort”: 未找到匹配的重载函数
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(22): error C2780: “void std::sort(_RanIt,_RanIt)”: 应输入 2 个参数，却提供了 3 个
+  e:\visualstudio2017\vc\tools\msvc\14.10.25017\include\algorithm(2921): note: 参见“std::sort”的声明
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(36): error C3867: “Column::Column_dTt_Compare”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(36): error C2672: “sort”: 未找到匹配的重载函数
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(36): error C2780: “void std::sort(_RanIt,_RanIt)”: 应输入 2 个参数，却提供了 3 个
+  e:\visualstudio2017\vc\tools\msvc\14.10.25017\include\algorithm(2921): note: 参见“std::sort”的声明
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(87): error C3867: “Row::Row_RN_Compare”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(87): error C2672: “sort”: 未找到匹配的重载函数
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(87): error C2780: “void std::sort(_RanIt,_RanIt)”: 应输入 2 个参数，却提供了 3 个
+  e:\visualstudio2017\vc\tools\msvc\14.10.25017\include\algorithm(2921): note: 参见“std::sort”的声明
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(88): error C3867: “Row::Row_RN_Compare”: 非标准语法；请使用 "&" 来创建指向成员的指针
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(88): error C2672: “sort”: 未找到匹配的重载函数
+c:\users\user\documents\github\quickprobing\quickprobing\pattern.cpp(88): error C2780: “void std::sort(_RanIt,_RanIt)”: 应输入 2 个参数，却提供了 3 个
+  e:\visualstudio2017\vc\tools\msvc\14.10.25017\include\algorithm(2921): note: 参见“std::sort”的声明
