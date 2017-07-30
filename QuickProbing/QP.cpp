@@ -47,7 +47,7 @@ int main()
 
 				vector<Row> temp_PtauQ = temp_Pattern.FindSuppSet(temp_Pattern.SupportRow, t);
 				vector<Row> temp_P = RTE.SelectRows(temp_PtauQ);
-				if(temp_Pattern.m_Submatrix.isEligible(RTE.alpha, RTE.Rminimum, RTE.Tminimum)&&)
+				if(temp_Pattern.m_Submatrix.isEligible(RTE.alpha, RTE.Rminimum, RTE.Tminimum)&&(temp_Pattern.m_Submatrix.VR+ temp_Pattern.m_Submatrix.VT)<=)
 			}
 			else//no collumn is picked
 			{

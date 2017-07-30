@@ -9,6 +9,8 @@ public:
 	vector<Row> P;
 	vector<Column> Q;
 	double density;
+	void VR_Updata();
+	void VT_Updata();
 	bool isEligible(double alpha,int rmin,int tmin);
 private:
 
@@ -22,6 +24,8 @@ Submatrix::Submatrix()
 Submatrix::~Submatrix()
 {
 }
+
+
 
 bool Submatrix::isEligible(double alpha, int rmin, int tmin)
 {
